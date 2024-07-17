@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: Montserrat, sans-serif;
+}
+
+:root {
+  --bg-color: #0b0c10;
+  --primary-color: #66fcf1;
+  --secondary-color: #1f2833;
+  --tertiary-color: #45a29e;
+  --text-color: #c5c6c7;
+  --white-color: #fff;
+
+  --bg2: #8FB9A8;
+  --color1: #f0727f;
+  --color2: #765D69;
+  --color3: #FCD0BA;
+  --color4: #FEFAD4;
+}
+
+html {
+  font-size: 60%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 4rem 12%;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+  font-weight: 800;
+  transition: 0.3s ease;
+}
+.logo {
+  font-family: "Yeseva One", serif;
+  font-size: 3rem;
+  color: var(--primary-color);
+  text-shadow: 0 0 2px var(--primary-color);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.logo:hover {
+  color: var(--tertiary-color);
+  transform: scale(1.1);
+}
+.navbar a {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-left: 4rem;
+  transition: 0.2s ease;
+}
+.navbar a:hover,
+.navbar a.active {
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
+  border-radius: 3px;
+}
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--primary-color);
+  display: none;
+}
+section {
+  min-height: 100vh;
+  padding: 10rem 12%;
+}
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15rem;
+  position: sticky !important;
+  top: 0;
+}
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  text-align: left;
+  justify-content: center;
+  margin-top: 3rem;
+}
+span {
+  color: var(--primary-color);
+  font-family: yeseva one;
+}
+.home-content h3 {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  font-size: 5rem;
+}
+.home-content h1 {
+  font-size: 5rem;
+  margin-top: 1.5rem;
+  line-height: 1;
+  color: var(--white-color);
+}
+.home-content p {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  line-height: 1.6;
+  font-size: 1.5rem;
+}
+.home-img img {
+  position: relative;
+  top: 3rem;
+  width: 25vw;
+  height: auto;
+  border-radius: 15px;
+}
+.social-icons {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  font-size: 2.5rem;
+  border-radius: 50%;
+  color: var(--primary-color);
+  margin-right: 1.5rem;
+  transition: 0.2s ease-in-out;
+}
+.social-icons a:hover {
+  color: var(--text-color);
+  transform: scale(1.3) translateY(-3px);
+  box-shadow: 0 0 25px var(--primary-color);
+  background-color: var(--primary-color);
+}
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--primary-color);
+  box-shadow: 0 0 25px var(--primary-color);
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  color: #0b0c10;
+  border: 2px solid transparent;
+  letter-spacing: 0.1rem;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 50px var(--primary-color);
+}
+.cursor {
+  display: inline-block;
+  width: 3px;
+  background-color: var(--primary-color);
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*-----------About-----------*/
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  gap: 5rem;
+  background-image: linear-gradient(
+    to top,
+    var(--bg-color),
+    var(--bg-color),
+    var(--bg-color),
+    var(--bg-color),
+    var(--bg-color),
+    var(--bg-color),
+    #1f2833e8
+  );
+  position: relative;
+}
+.about img {
+  position: relative;
+  top: 3rem;
+  width: 20vw;
+  height: auto;
+  border-radius: 15px;
+  border: 5px solid var(--secondary-color);
+}
+.about-content {
+  margin-top: 2rem;
+}
+.title {
+  font-size: 60px;
+  font-family: Yeseva One;
+  color: var(--primary-color);
+}
+p {
+  color: var(--text-color);
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+.tab-links {
+  margin-right: 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: relative;
+  color: var(--text-color);
+  font-size: 2rem;
+  transition: 0.2s ease-in-out;
+}
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: -8px;
+  transition: 0.2s;
+}
+.tab-links.active-link,
+.tab-links:hover {
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
+  border-radius: 3px;
+}
+.tab-links.active-link::after {
+  width: 65%;
+}
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+  font-size: 1.25rem;
+}
+.tab-contents ul li span {
+  color: var(--primary-color);
+  font-size: 20px;
+}
+.tab-contents {
+  display: none;
+}
+.tab-contents.active-tab {
+  display: block;
+}
+/*-----------Portofolio-----------*/
+#portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  gap: 5rem;
+  background-color: var(--bg-color);
+  position: relative;
+}
+.portfolio-content {
+  text-align: center;
+}
+.portfolio-content .title {
+  font-size: 5rem;
+  font-family: "Yeseva One", serif;
+  color: var(--primary-color);
+  margin-top: 2rem;
+}
+.portfolio-content p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.portfolio a {
+  display: block;
+  margin: 5rem;
+  padding: 1rem 2.8rem;
+  background: var(--primary-color);
+  box-shadow: 0 0 25px var(--primary-color);
+  border-radius: 4rem;
+  font-size: 2rem;
+  color: #0b0c10;
+  border: 2px solid transparent;
+  letter-spacing: 0.1rem;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.portfolio a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 50px var(--primary-color);
+}
+/*-----------Contact-----------*/
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  background-color: var(--bg2);
+  position: relative;
+}
+.header.color-change a{
+  color: var(--color2);
+}
+.header.color-change .logo,
+.header.color-change .navbar {
+  color: var(--secondary-color);
+  text-shadow: none;
+}
+.header.color-change a.active,
+.header.color-change a:hover{
+  color: var(--color1);
+  border-bottom: 3px solid var(--color1);
+  border-radius: 3px;
+}
+.contact .title{
+  text-align: left;
+  margin-top: 5rem;
+  color: var(--color1);
+  font-size: 10rem;
+}
+.contact p{
+  font-size: 2.4rem;
+}
+h1{
+  font-size: 3rem;
+  color : var(--color1);
+}
+.social-icons2 {
+  margin-top: 2rem;
+}
+.social-icons2 a{
+  text-decoration: none;
+  font-size: 5rem;
+  color: var(--color2);
+  display: inline-block;
+}
+.social-icons2 a:hover {
+  color: var(--color4);
+  transform: translateY(-5px);
+}
+form input, form textarea{
+  background-color: var(--color4);
+  color: var(--color2); 
+  border: 1px solid var(--color2);
+  padding: 10px;
+  margin: 10px 0;
+  width: 80%;
+  max-width: 500px;
+}
+form input:focus, form textarea:focus {
+  border: 1px solid var(--color1);
+  outline: none;
+}
+.btn {
+  display: block;
+  width: fit-content;
+  padding: 15px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  background-color: var(--color3);
+  color: var(--color2);
+  font-weight: 800;
+  box-shadow: none;
+}
+
+.btn:hover {
+  background-color: var(--color4);
+  color: var(--color2);
+  box-shadow: none;
+  cursor: pointer;
+}
+#msg{
+  color: var(--bg-color);
+  margin-top: 10px;
+  display: block;
+}
+
+/*-----------Footer-----------*/
+.copyright {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fernando Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Yeseva+One"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header" id="page-header">
+      <a href="#home" class="logo">Nando</a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <!--------------------------------- Home --------------------------------->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1 class="home-title">Hello, I'm <span>Fernando Jaya Lay</span></h1>
+        <h3 class="home-desc">
+          I'm <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+        </h3>
+        <p>
+          Passionate Indonesian student specializing in Computer Science with a
+          focus on Artificial Intelligence. Keen to leverage my skills and
+          contribute significantly as I commence my professional career.
+        </p>
+        <div class="social-icons">
+          <a href="https://github.com/wakawekaka"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/fernando-jaya-lay-8732a3252/"
+            ><i class="bx bxl-linkedin-square"></i
+          ></a>
+          <a href="https://www.instagram.com/fernando_jaya_lay/"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+        </div>
+      </div>
+      <div class="home-img">
+        <img src="images/nando.png" alt="Fernando Jaya Lay" />
+      </div>
+    </section>
+    <!--------------------------------- About --------------------------------->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="images/nando2.jpg" alt="Fernando Jaya Lay" />
+      </div>
+      <div class="about-content">
+        <div class="title">About Me</div>
+        <p>
+          I am a student at Asia Pacific University,<br />
+          Bachelor of Computer Science (Hons) (Artificial Intelligence).
+        </p>
+        <div class="tab-titles">
+          <p class="tab-links active-link" tab-contents="skills">Skills</p>
+          <p class="tab-links" tab-contents="experience">Experience</p>
+          <p class="tab-links" tab-contents="education">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>UI/UX</span><br />Designing Web/App Interfaces</li>
+            <li><span>Python</span><br />Image Manipulation</li>
+            <li><span>C</span><br />Text File Manipulation</li>
+            <li><span>Java</span><br />Object Oriented Programming</li>
+            <li>
+              <span>R</span><br />Data Processing and Graphical Representation
+            </li>
+            <li><span>SQL</span><br />Efficient Data Management</li>
+            <li><span>Flutter</span><br />Mobile Application</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li>
+              <span>Technical Support Trainee - 2023</span><br />at Asia Pacific
+              University
+            </li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2022 - Present</span><br />Asia Pacific University</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--------------------------------- Portfolio --------------------------------->
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio-content">
+        <div class="title">Portfolio</div>
+        <p>Check out some of my works.</p>
+        <a href="https://wakawekaka.itch.io/beruang-merah"
+          >Itch.io Lv. 99 Game Jam 2023</a
+        >
+        <a href="https://github.com/wakawekaka/Tic-Tac-Toe_With_AI"
+          >Tic Tac Toe with Minimax Algorithm</a
+        >
+        <a href="https://github.com/wakawekaka/Edukesyen"
+          >Online Course Mobile Application</a
+        >
+      </div>
+    </section>
+    <!--------------------------------- Contact Me --------------------------------->
+    <section class="contact" id="contact">
+      <div class="contact-content">
+        <div class="title">Contact Me</div>
+        <p>Feel free to contact me.</p>
+        <h1><i class="bx bxs-paper-plane"></i>nando03755@gmail.com</h1>
+        <h1><i class="bx bxs-phone"></i>+60-10-230-1706</h1>
+        <h1><i class="bx bxs-phone"></i>+62-813-1129-9060</h1>
+        <div class="social-icons2">
+          <a href="https://github.com/wakawekaka"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/fernando-jaya-lay-8732a3252/"
+            ><i class="bx bxl-linkedin-square"></i
+          ></a>
+          <a href="https://www.instagram.com/fernando_jaya_lay/"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" requred />
+          <input type="email" name="Email" placeholder="Your Email" required/>
+          <textarea name="Message" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </section>
+    <div class="copyright">
+      <p>@ 2024 Fernando Jaya Lay Some Right Reserved</p>
+    </div>
+    <script>
+      const scriptURL =
+          "https://script.google.com/macros/s/AKfycbz4aA-S7LVX-LlCs5ogi6LdyMF7_K8B0fvIGNV-kFjYXVFURLeXiJ6lQnRyVRRE9Pb1/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          fetch(scriptURL, { method: "POST", body: new FormData(form) })
+              .then((response) => {
+                  msg.innerHTML = "Thanks for submitting your details";
+                  setTimeout(function () {
+                      msg.innerHTML = "";
+                  }, 5000);
+                  form.reset();
+              })
+              .catch((error) => console.error("Error!", error.message));
+      });
+  </script>
+    <script src="script.js"></script>
+  </body>
+</html>
